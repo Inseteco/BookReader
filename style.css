@@ -1,0 +1,16 @@
+.block {
+  margin: 30px 100px;
+  width: 400px;
+  height: 500px;
+  border: 3px solid black; 
+}
+
+.pageLink{
+  margin: 30px 100px;
+}
+
+.book {
+  margin: 20px;
+  font-size: 17px;
+
+}

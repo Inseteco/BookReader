@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <meta charset=UTF-8 />
+  </head>
+
+  <body>
+    <div id="app">
+      <div
+        v-for="(tx, index) in text"
+        :key="index"
+      >
+        <div
+          v-if="index <= currentPage && index >= currentPage - 1 "
+          class="block book"
+        >{{ tx }}</div>
+      </div>
+      
+      <div class="pageLink">
+        <button @click="currentPage -= 2"><<</button>
+        <div></div>
+        <button @click="currentPage += 2">>></button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
